@@ -19,6 +19,7 @@ end
 config :omsmailer,
   ecto_repos: [Omsmailer.Repo],
   from_address: System.get_env("SMTP_USER")
+  from_name: System.get_env("SMTP_NAME")
 
 # Configures the endpoint
 config :omsmailer, OmsmailerWeb.Endpoint,
